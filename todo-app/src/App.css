@@ -1,0 +1,108 @@
+/* App Container */
+.app-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(135deg, #89cff0, #1e90ff);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Glassmorphic Card */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  color: white;
+  margin-top: 20px;
+}
+
+.card input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+  outline: none;
+  color: white;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 80%;
+  font-size: 16px;
+}
+
+.card input::placeholder {
+  color: #f1f1f1;
+  opacity: 0.8;
+}
+
+.card button {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+.card button:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Task List */
+.task-list {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.task-item {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 10px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.task-item .priority {
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.priority.high {
+  background-color: rgba(231, 76, 60, 0.7);
+}
+
+.priority.medium {
+  background-color: rgba(241, 196, 15, 0.7);
+}
+
+.priority.low {
+  background-color: rgba(46, 204, 113, 0.7);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 20px;
+  }
+
+  .card input {
+    width: 100%;
+  }
+}
